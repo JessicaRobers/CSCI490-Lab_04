@@ -2,6 +2,7 @@ package com.introtoandroid.csci490_lab_04;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,6 +12,10 @@ import java.net.URL;
 import java.net.URLConnection;
 
 public class MainActivity extends AppCompatActivity {
+    private TextView submitText;
+
+    myNewClass newClass = new myNewClass(submitText);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,4 +92,5 @@ public class MainActivity extends AppCompatActivity {
 
         return isString;
     }
+
 }
